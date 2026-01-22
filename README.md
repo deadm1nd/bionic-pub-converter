@@ -1,16 +1,60 @@
-# React + Vite
+# Bionic Reader 📖
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Bionic Reader** — это современное веб-приложение для конвертации книг в формате EPUB в режим "бионического чтения". Текст преобразуется таким образом, что первая половина каждого слова выделяется жирным шрифтом, что помогает глазу быстрее скользить по тексту и увеличивает скорость чтения.
 
-Currently, two official plugins are available:
+![Скриншот приложения](./public/sc.png) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+🔗 **[Открыть Демо](https://deadm1nd.github.io/bionic-pub-converter/)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Особенности
 
-## Expanding the ESLint configuration
+- **🚀 Полностью в браузере**: Файлы обрабатываются локально на вашем устройстве и никуда не загружаются. Конфиденциальность гарантирована.
+- **⚡ Мгновенная работа**: Используется JSZip для быстрой распаковки и модификации структуры EPUB.
+- **🎨 Современный дизайн**:
+  - Glassmorphism интерфейс.
+  - Приятный градиентный фон.
+  - Строгое центрирование контента.
+  - Адаптивность под мобильные устройства.
+- **📂 Поддержка EPUB**: Работает со стандартом EPUB, сохраняя структуру книги.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Технологический стек
+
+- **Frontend**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Стилизация**: [Tailwind CSS](https://tailwindcss.com/)
+- **Парсинг**: [Client-side ZIP parsing](https://stuk.github.io/jszip/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+
+## 🚀 Запуск локально
+
+1. **Клонируйте репозиторий:**
+   ```bash
+   git clone https://github.com/deadm1nd/bionic-pub-converter.git
+   cd bionic-pub-converter
+   ```
+
+2. **Установите зависимости:**
+   ```bash
+   npm install
+   ```
+
+3. **Запустите сервер разработки:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Сборка для продакшена:**
+   ```bash
+   npm run build
+   ```
+
+## 📦 Деплой
+
+Проект настроен для автоматического деплоя на GitHub Pages с помощью пакета `gh-pages`.
+
+```bash
+npm run deploy
+```
+
+---
+© 2026 Deadmind.
