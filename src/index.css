@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+
+  html,
+  body {
+    @apply h-full w-full m-0 p-0;
+  }
+
+  body {
+    /* Gradient background on body */
+    @apply bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 bg-no-repeat bg-fixed text-slate-900 font-sans antialiased overflow-x-hidden;
+  }
+
+  #root {
+    @apply min-h-screen flex items-center justify-center;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-xl border border-white/50 shadow-xl;
+  }
+}
